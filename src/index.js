@@ -1,17 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React,{useContext} from 'react';
+import ReactDOM,{render} from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './navbar';
+import HomePage from './homepage';
+import {MovieProvider} from './moviedatacontext';
+import {Container,Row,Col} from 'react-bootstrap';
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
+import Review from './Review';
+import {Moviecontext} from './moviedatacontext';
+import MovieComp from './moviecomp';
+function Main(){
+     
+     
+    return(
+        <div>
+            <BrowserRouter>
+            <MovieProvider>
+            <Container fluid>
+                <Col><NavBar/></Col>
+              <Route exact strict path='/'><Col><HomePage/></Col></Route>  
+              <Route exact strict path='/review'><Col><Review/></Col></Route> 
+              <Route exact strict path='/search'></Route>
+              <Route exact  path='/movies/:id'><Col><MovieComp/></Col></Route> 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+            </Container>
+            
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+            </MovieProvider>
+            </BrowserRouter>
+        </div>
+    )
+}
+
+
+render(<Main/>,document.getElementById('root'));
+
