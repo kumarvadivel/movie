@@ -19,10 +19,11 @@ function Main(){
             <MovieProvider>
             <Container fluid>
                 <Col><NavBar/></Col>
+                <Switch>
               <Route exact  path='/movie/'><Col><HomePage/></Col></Route>  
               <Route exact  path='/movie/review/'><Col><Review/></Col></Route> 
              <Route exact  path='/movie/movies/:id'><Col><MovieComp/></Col></Route> 
-
+                </Switch>
             </Container>
             
 
