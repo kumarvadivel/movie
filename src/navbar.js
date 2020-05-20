@@ -16,7 +16,7 @@ export default function NavBar(props){
             <Row>
                 <Col>
                 <Navbar bg="dark" variant="dark">
-     <Navbar.Brand href="/movie/movies">MoviesForYou</Navbar.Brand>
+     <Navbar.Brand href="/movie/movie">MoviesForYou</Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="/">Home</Nav.Link>
       <Nav.Link href="/review">Reviews</Nav.Link>
