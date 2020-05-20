@@ -16,10 +16,10 @@ export default function NavBar(props){
             <Row>
                 <Col>
                 <Navbar bg="dark" variant="dark">
-     <Navbar.Brand href="movie/">MoviesForYou</Navbar.Brand>
+     <Navbar.Brand href="/">MoviesForYou</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="movie/">Home</Nav.Link>
-      <Nav.Link href="movie/review">Reviews</Nav.Link>
+      <Nav.Link href="/">Home</Nav.Link>
+      <Nav.Link href="/review">Reviews</Nav.Link>
       
       
       
