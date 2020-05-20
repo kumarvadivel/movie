@@ -19,7 +19,7 @@ export default function NavBar(props){
      <Navbar.Brand href="/movie/">MoviesForYou</Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="/movie/">Home</Nav.Link>
-      <Nav.Link href="/movie/review">Reviews</Nav.Link>
+      <Nav.Link href="/movie/review/">Reviews</Nav.Link>
       
       
       
