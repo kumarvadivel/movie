@@ -21,7 +21,7 @@ function Main(){
                 <Col><NavBar/></Col>
               <Route exact  path='/movie/'><Col><HomePage/></Col></Route>  
               <Route exact  path='/movie/review/'><Col><Review/></Col></Route> 
-             <Route exact  path='/movie/:id'><Col><MovieComp/></Col></Route> 
+             <Route exact  path='/movie/movies/:id'><Col><MovieComp/></Col></Route> 
 
             </Container>
             

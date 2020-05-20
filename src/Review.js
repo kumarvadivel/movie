@@ -27,7 +27,7 @@ export default function Review(){
             <Card.Text>
                 {movies.overview.substring(0,100)}
             </Card.Text>
-             <a href={'/movie/'+movies.id}> see more</a>
+             <a href={'/movie/movies/'+movies.id}> see more</a>
         </Card.Body>
         </Card>
         </div>)}):"loading"}
